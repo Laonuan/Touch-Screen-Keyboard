@@ -4,4 +4,4 @@ Keyboard for Touch Screen, you can start it in cmd like to move the start locati
 
 "SoftBoard.exe 0 0"
 
-Two numbers are param these is the keyboard start location.
+Two numbers are param that is the keyboard start location.
