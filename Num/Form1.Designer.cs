@@ -905,21 +905,21 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(132, 60);
             this.btnClose.TabIndex = 51;
-            this.btnClose.Text = "关闭";
+            this.btnClose.Text = "Close 关闭";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnMove
             // 
             this.btnMove.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnMove.Font = new System.Drawing.Font("Consolas", 26.25F);
+            this.btnMove.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.btnMove.ForeColor = System.Drawing.SystemColors.InfoText;
             this.btnMove.Location = new System.Drawing.Point(12, 81);
             this.btnMove.Margin = new System.Windows.Forms.Padding(3, 3, 6, 6);
             this.btnMove.Name = "btnMove";
             this.btnMove.Size = new System.Drawing.Size(90, 60);
             this.btnMove.TabIndex = 52;
-            this.btnMove.Text = "✥";
+            this.btnMove.Text = "移动";
             this.btnMove.UseVisualStyleBackColor = false;
             this.btnMove.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMove_MouseDown);
             this.btnMove.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnMove_MouseMove);
