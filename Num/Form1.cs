@@ -22,6 +22,7 @@ namespace Num
         private bool bCapsDown = false;
         private bool bShift = false;
         private bool bCapsStart = false;
+        private bool bCloseBtn = true;
         private int iStartX, iStartY;
 
         private Button[] btnsSymbol;
@@ -222,7 +223,7 @@ namespace Num
             if (btn != null)
             {
                 string btnChar = (string)btn.Tag;
-                SendKeys.Send(btnChar);
+                SendKeys.SendWait(btnChar);
             }
         }
 
@@ -236,16 +237,16 @@ namespace Num
                 if(bCapsDown)
                 {
                     if (bCapsStart)
-                        SendKeys.Send(btnChar[0]);
+                        SendKeys.SendWait(btnChar[0]);
                     else
-                        SendKeys.Send(btnChar[1]);
+                        SendKeys.SendWait(btnChar[1]);
                 }
                 else 
                 {
                     if(bCapsStart)
-                        SendKeys.Send(btnChar[1]);
+                        SendKeys.SendWait(btnChar[1]);
                     else
-                        SendKeys.Send(btnChar[0]);
+                        SendKeys.SendWait(btnChar[0]);
                 }
                 
             }
@@ -259,12 +260,12 @@ namespace Num
                 string[] btnChar = (string[])btn.Tag;
                 if(bShift)
                 {
-                    SendKeys.Send(btnChar[1]);
+                    SendKeys.SendWait(btnChar[1]);
                     btnShift_Click(null, null);
                 }
                 else
                 {
-                    SendKeys.Send(btnChar[0]);
+                    SendKeys.SendWait(btnChar[0]);
                 }
             }
         }
@@ -284,11 +285,6 @@ namespace Num
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnMove_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -305,6 +301,38 @@ namespace Num
             {
                 this.Left += e.X - iStartX;
                 this.Top += e.Y - iStartY;
+            }
+        }
+
+        private void btnClose_MouseClick(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnEnter_MouseClick(object sender, EventArgs e)
+        {
+            SendKeys.SendWait("{Enter}");
+        }
+
+        private void btnClose_MouseDown(object sender, MouseEventArgs e)
+        {
+            
+            if (e.Button == MouseButtons.Right)
+            {
+                if (bCloseBtn)
+                {
+                    btnClose.Click -= btnClose_MouseClick;
+                    btnClose.Click += btnEnter_MouseClick;
+                    btnClose.Text = "Enter 回车";
+                }
+                else
+                {
+                    btnClose.Click += btnClose_MouseClick;
+                    btnClose.Click -= btnEnter_MouseClick;
+                    btnClose.Text = "Close 关闭";
+                }
+
+                bCloseBtn = !bCloseBtn;    
             }
         }
 

@@ -1,0 +1,16 @@
+C:\Users\h1945\Desktop\Keyboard\Num\bin\Release\SoftBoard.exe
+C:\Users\h1945\Desktop\Keyboard\Num\bin\Release\SoftBoard.pdb
+C:\Users\h1945\Desktop\Keyboard\Num\obj\Release\Num.csprojResolveAssemblyReference.cache
+C:\Users\h1945\Desktop\Keyboard\Num\obj\Release\Num.Form1.resources
+C:\Users\h1945\Desktop\Keyboard\Num\obj\Release\SoftBoard.Properties.Resources.resources
+C:\Users\h1945\Desktop\Keyboard\Num\obj\Release\Num.csproj.GenerateResource.Cache
+C:\Users\h1945\Desktop\Keyboard\Num\obj\Release\SoftBoard.exe
+C:\Users\h1945\Desktop\Keyboard\Num\obj\Release\SoftBoard.pdb
+D:\Poka\Other\Keyboard\Num\obj\Release\SoftBoard.exe
+D:\Poka\Other\Keyboard\Num\obj\Release\SoftBoard.pdb
+D:\Poka\Other\Keyboard\Num\bin\Release\SoftBoard.exe
+D:\Poka\Other\Keyboard\Num\bin\Release\SoftBoard.pdb
+D:\Poka\Other\Keyboard\Num\obj\Release\Num.csprojResolveAssemblyReference.cache
+D:\Poka\Other\Keyboard\Num\obj\Release\Num.Form1.resources
+D:\Poka\Other\Keyboard\Num\obj\Release\SoftBoard.Properties.Resources.resources
+D:\Poka\Other\Keyboard\Num\obj\Release\Num.csproj.GenerateResource.Cache
